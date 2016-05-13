@@ -33,9 +33,9 @@ To get the disease trends prediction:
   4. node server.js
   5. Go to the browser and type http://127.0.0.1:9000/trend
   
-  The above steps lead you to the web page where the bar graph for the disease trends in 2016 is shown
+  The above steps lead you to the web page where the bar graph for the disease trends in 2016 is shown.
   
-  To get the hospital recommendation for a particular zipcode:
+To get the hospital recommendation for a particular zipcode:
   
   1. npm install
   2. node server.js
