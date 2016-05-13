@@ -1,0 +1,151 @@
+<html>
+<head>
+    
+    
+	<title>BigData</title>
+	<meta charset="utf-8" />
+	<!--  Meta tags for sharing -->
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <base href="/">
+    <style>
+        
+         /* Sticky footer styles
+        -------------------------------------------------- */
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+        .btn-primary {
+            background-color: #252525;
+        }
+        body {
+          /* Margin bottom by footer height */
+          margin-bottom: 40px;
+          font-family: 'Open Sans', sans-serif;
+          overflow-x: hidden;
+          background-color: #F1F3F1;
+        }
+        h5{
+            font-family: 'Open Sans', sans-serif;
+        }
+        strong{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .box{
+            border: 2px #BBB solid
+        }
+        .footer {
+          overflow: hidden;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          /* Set the fixed height of the footer here */
+          height: 40px;
+          background-color: #252525;
+        }
+    </style>
+</head>
+<body ng-app="mainApp">
+	<div ng-controller="homeCtrl">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/spending">MediCare</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/spending">Spending Prediction</a>
+                            <!-- Calls the about page -->
+                        </li>
+                        <li>
+                            <a href="/trend">Disease Trends</a>
+                            <!-- Calls the about page -->
+                        </li>
+                        <li>
+                            <a href="/reco">Hospital Recommendation</a>
+                            <!-- Calls the about page -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+		<!-- Navbar 
+		<div class="navbar navbar-default navbar-fixed-top" style="background-color:#FFF;">
+			<div class="container" >
+				<div class="navbar-headr" >
+
+					<strong><a href="/"><h4>MediCare Spending Map</h4></a></strong>
+                    <strong><a href="/reco"><h4>Disease Trends</h4></a></strong>
+                
+				</div>
+				
+			</div>
+		</div>
+
+        --> 
+		<div class="container" >
+			<br/><br/><br/><br/><br/>
+            <!-- Dont remove.. Template holder -->
+			<div class="row">
+                <div class="col-sm-1 col-md-1"></div>
+				<div class="col-xs-8 col-sm-10 col-md-10">
+					<div ng-view="">
+                    </div>
+				</div>
+                <div class="col-sm-1 col-md-1"></div>
+            </div>
+		</div>
+	</div>
+	
+	<footer class="footer" style="background-color:#222;">
+    	<div class="container" align="middle">
+			<p class="text-muted">
+				<p class="white" valign="middle">
+
+					
+				</p>
+			</p>
+		</div>
+	</footer>
+    <!-- Loading scripts at the end -->
+	<script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-0.9.0.min.js"></script>
+    
+    <!-- Angular Scripts -->
+    <script src="scripts/app.js" ></script>
+    <script src="scripts/spendCtrl.js" ></script>
+    <script src="scripts/recoCtrl.js" ></script>
+    <script src="scripts/trendCtrl.js" ></script>
+    
+	<!-- Resources -->
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+
+
+		<!-- End of Scripts -->
+</body>
+</html>

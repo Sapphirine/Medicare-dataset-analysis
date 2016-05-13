@@ -1,0 +1,6 @@
+#!/bin/bash
+# declare STRING variable
+STRING="Hello World"
+#print variable on a screen
+echo $STRING
+q -H -d"," "SELECT HospitalName,Patient_Survey_Star_Rating,Address,CountyName,State FROM t1 WHERE ZIPCode=$1 AND HCAHPS_Answer_Description='Summary star rating'" > ./public/data/op.txt
